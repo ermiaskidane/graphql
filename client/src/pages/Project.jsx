@@ -25,6 +25,8 @@ export default function Project() {
           <p className='lead'>{data.project.status}</p>
 
           <ClientInfo client={data.project.client} />
+          
+          <DeleteProjectButton projectId={data.project.id} />
         </div>
       )}
     </>
